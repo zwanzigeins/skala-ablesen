@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8"/>
+	<title>Skala ablesen</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+	<h1>Skala ablesen</h1>
+</body>
+
+<div id="skalaAblesen">
+	<svg version="1.1"
+		baseProfile="full"
+		xmlns="http://www.w3.org/2000/svg"
+		xmlns:xlink="http://www.w3.org/1999/xlink"
+		xmlns:ev="http://www.w3.org/2001/xml-events"
+		viewBox="0 0 250 38"
+		id="skala"
+	>
+	<g id="offset" transform="translate(10,10)">
+		<g pointer-events="none">
+			<g id=zeiger2 class="hiddenDisplay" transform=translate(0,0)>
+				<path d="M 0,-4 l -1,-1 2,0 -1,1 0,26 -1,1 2,0 -1,-1 " />
+				<g id=zeiger1 transform=translate(0,0)>
+					<path d="M 0,-3 l -1,-1 2,0 -1,1 0,24 -1,1 2,0 -1,-1 " />
+					<g id=zeiger0 transform=translate(0,0)>
+						<path d="M 0,-2 l -1,-1 2,0 -1,1 0,22 -1,1 2,0 -1,-1 " />
+					</g>
+				</g>
+			</g>
+			<path id="cursor" d="M 0,-8 v 34" transform="translate(210,0)" />
+		</g>
+		<g id="mouseover" pointer-events="all">
+			<path id="kontur" d="M 0.5,18 V 0 H 218.5 c 3,3 3,15 0,18 z" />
+		</g>
+		<g pointer-events="none">
+			<path class="ticks" d="M 1,0 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v5 m 1,-5 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v6
+				m 1,-6 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v5 m 1,-5 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v6
+				m 1,-6 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v5 m 1,-5 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v6
+				m 1,-6 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v5 m 1,-5 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v6
+				m 1,-6 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v5 m 1,-5 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v6
+				m 1,-6 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v5 m 1,-5 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v6
+				m 1,-6 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v5 m 1,-5 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v6
+				m 1,-6 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v5 m 1,-5 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v6
+				m 1,-6 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v5 m 1,-5 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v6
+				m 1,-6 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v5 m 1,-5 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v9
+				m 1,-9 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v5 m 1,-5 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v6
+				m 1,-6 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v5 m 1,-5 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v6
+				m 1,-6 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v5 m 1,-5 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v6
+				m 1,-6 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v5 m 1,-5 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v6
+				m 1,-6 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v5 m 1,-5 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v6
+				m 1,-6 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v5 m 1,-5 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v6
+				m 1,-6 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v5 m 1,-5 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v6
+				m 1,-6 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v5 m 1,-5 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v6
+				m 1,-6 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v5 m 1,-5 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v6
+				m 1,-6 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v5 m 1,-5 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v9
+				m 1,-9 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v5 m 1,-5 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v6
+				m 1,-6 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 v5 m 1,-5 v4 m 1,-4 v4 m 1,-4 v4 m 1,-4 m 0,0.5 v3.5 m 1,-1 v 2" />
+			<path class="ticks" d="M 1,18 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-5 m 1,5 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-6
+				m 1,6 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-5 m 1,5 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-6
+				m 1,6 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-5 m 1,5 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-6
+				m 1,6 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-5 m 1,5 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-6
+				m 1,6 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-5 m 1,5 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-6
+				m 1,6 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-5 m 1,5 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-6
+				m 1,6 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-5 m 1,5 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-6
+				m 1,6 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-5 m 1,5 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-6
+				m 1,6 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-5 m 1,5 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-6
+				m 1,6 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-5 m 1,5 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-9
+				m 1,9 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-5 m 1,5 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-6
+				m 1,6 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-5 m 1,5 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-6
+				m 1,6 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-5 m 1,5 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-6
+				m 1,6 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-5 m 1,5 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-6
+				m 1,6 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-5 m 1,5 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-6
+				m 1,6 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-5 m 1,5 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-6
+				m 1,6 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-5 m 1,5 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-6
+				m 1,6 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-5 m 1,5 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-6
+				m 1,6 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-5 m 1,5 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-6
+				m 1,6 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-5 m 1,5 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-9
+				m 1,9 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-5 m 1,5 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-6
+				m 1,6 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 v-5 m 1,5 v-4 m 1,4 v-4 m 1,4 v-4 m 1,4 m 0,-0.5 v-3.5 m 1,1 v-2" />
+			<g>
+				<text class="label" x="10" y="11.5" >1</text>
+				<text class="label" x="20" y="11.5" >2</text>
+				<text class="label" x="30" y="11.5" >3</text>
+				<text class="label" x="40" y="11.5" >4</text>
+				<text class="label" x="50" y="11.5" >5</text>
+				<text class="label" x="60" y="11.5" >6</text>
+				<text class="label" x="70" y="11.5" >7</text>
+				<text class="label" x="80" y="11.5" >8</text>
+				<text class="label" x="90" y="11.5" >9</text>
+				<text class="label labelDekL" x="100" y="11.5" >1</text>
+				<text class="label labelDekR" x="100" y="11.5" >0</text>
+				<text class="label" x="110" y="11.5" >11</text>
+				<text class="label" x="120" y="11.5" >12</text>
+				<text class="label" x="130" y="11.5" >13</text>
+				<text class="label" x="140" y="11.5" >14</text>
+				<text class="label" x="150" y="11.5" >15</text>
+				<text class="label" x="160" y="11.5" >16</text>
+				<text class="label" x="170" y="11.5" >17</text>
+				<text class="label" x="180" y="11.5" >18</text>
+				<text class="label" x="190" y="11.5" >19</text>
+				<text class="label labelDekL" x="198" y="11.5" >2</text>
+				<text class="label labelDekR" x="202" y="11.5" >0</text>
+				<text class="label" x="210" y="11.5" >21</text>
+				<text class="label" x="218.5" y="11.5" >2</text>
+			</g>
+			<g class="metall">
+				<path id="anschlag" d="M 0,1 l 0.5,0 1,1 0,2 2,1 0,8 -2,1 0,2 -1,1 -0.5,0 z" />
+				<circle id="gelenk" cx="200" cy="9" r="3" />
+			</g>
+		</g>
+	</g>
+	</svg>
+	<div class="floatClear"></div>
+	<div id="buttonContainer">
+		<div id="btnLeft" class="utfButton">&#x1F814;</div>
+		<div id="btnRight" class="utfButton">&#x1F816;</div>
+		<div id="btnPlay" class="utfButton">&#x25B6;</div>
+	</div>
+	<div id="zahlZuText">
+		<div>
+			In Zentimeter: <span id="centi2"></span><span id="centi1">Zwei</span><span id="centiK"> Komma </span><span id="centi0">Eins</span>
+		</div>
+		<div>
+			In Millimeter: <span id="milli2"></span><span id="milli1">Zwanzig</span><span id="milli0">eins</span>
+		</div>
+	</div>
+</div>
+
+<!-- init -->
+<script type="text/javascript" type="module" src="src/skala.js" ></script>
+
+</html>

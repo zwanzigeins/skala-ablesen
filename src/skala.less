@@ -1,0 +1,117 @@
+
+div#skalaAblesen {
+	svg#skala {
+		width: 100vw;
+		min-width: 40em;
+		user-select: none;
+
+		g#zeiger2 {
+			>path {
+				stroke: @highlight1;
+				stroke-width: 1.5;
+				fill: @highlight1;
+			}
+			g#zeiger1 {
+				>path {
+					stroke: @highlight2;
+					stroke-width: 1.0;
+					fill: @highlight2;
+				}
+				g#zeiger0 {
+					>path {
+						stroke: @highlight3;
+						stroke-width: 0.5;
+						fill: @highlight3;
+					}
+				}
+			}
+		}
+
+		#cursor {
+			stroke: #080;
+			stroke-width: 0.5;
+			fill: none;
+		}
+		path#kontur {
+			stroke: #000;
+			stroke-width: 0.5;
+			fill: #EFC;
+		}
+		path.ticks {
+			stroke: #000;
+			stroke-width: 0.5;
+			fill: none;
+		}
+		text.label {
+			font-size: 7px;
+			text-anchor: middle;
+			&.labelDekL {
+				text-anchor: end;
+				fill: #08F;
+			}
+			&.labelDekR {
+				text-anchor: start;
+				fill: #08F;
+			}
+		}
+		.metall {
+			fill: #666;
+		}
+	}
+
+	#zahlZuText {
+		#centi2,
+		#milli2 {
+			color: @highlight1;
+		}
+		#centi1,
+		#milli1 {
+			color: @highlight2;
+		}
+		#centi0,
+		#milli0 {
+			color: @highlight3;
+		}
+	}
+
+	#buttonContainer {
+		float: right;
+		padding: 0.2rem;
+		margin-right: 1rem;
+		user-select: none;
+	}
+	.utfButton {
+		display: inline-block;
+		padding: 0.2rem 0.5rem; // make all boxes the same size ...
+		width: 1rem; // ... even if the content is too small
+		height: 1rem;
+		vertical-align: top; // ... even if the base-line is screwed up
+		cursor: pointer;
+		border-radius: 0.3rem;
+		border: 1px solid @primary;
+		box-shadow: 1px 1px 1px 1px @primary-transparent;
+		color: @primary;
+		user-select: none;
+
+		&:active { // clicked
+			box-shadow: inset 1px 1px 1px 1px @primary-transparent;
+		}
+	}
+}
+
+@media screen and (min-width: 900px) {
+	body {
+		padding: 0 5vw;
+	}
+	svg#skala {
+		width: 90vw;
+	}
+}
+@media screen and (min-width: 1200px) {
+	body {
+		padding: 0 10vw;
+	}
+	svg#skala {
+		width: 80vw;
+	}
+}

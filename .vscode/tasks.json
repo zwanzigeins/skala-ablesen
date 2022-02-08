@@ -1,0 +1,24 @@
+{
+// Unter https://go.microsoft.com/fwlink/?LinkId=733558
+// finden Sie Informationen zum Format von "tasks.json"
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "build",
+			"type": "npm",
+			"script": "build",
+			"group": {
+				"kind": "build",
+				"isDefault": true,
+			}
+		}, {
+			"label": "build:dev",
+			"type": "npm",
+			"script": "build:dev",
+		}, {
+			"label": "testCwd",
+			"type": "shell",
+			"command": [ "echo current dir: ${workspaceFolder}/out" ]
+		}
+	]
+}
