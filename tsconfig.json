@@ -5,6 +5,6 @@
 		"outDir": "out",
 		"composite": false,
 		"rootDir": ".",
-		"declaration": false,
-	},
+		"declaration": false
+	}
 }

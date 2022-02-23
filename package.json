@@ -7,7 +7,7 @@
 	"private": true,
 	"scripts": {
 		"// Build Utility": "",
-		"build:html": "copy .\\src\\index.html .\\out\\index.html",
+		"build:html": "node build-html.js",
 		"build:scripts": "tsc && npm run build:uglify",
 		"build:uglify": "uglifyjs out/src/skala.js -o out/src/skala.js -c -m --v8 --ie --webkit",
 		"build:scripts:dev": "tsc --project tsconfig-dev.json --watch",
