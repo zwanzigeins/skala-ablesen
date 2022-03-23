@@ -59,6 +59,13 @@ div#skalaAblesen {
 	}
 
 	#zahlZuText {
+
+		font-size: 20px;		
+
+		@media(min-width: 1000px){
+			font-size: 24px;
+		}
+		
 		#centi2,
 		#milli2 {
 			color: @highlight1;
@@ -74,10 +81,15 @@ div#skalaAblesen {
 	}
 
 	#buttonContainer {
-		float: right;
 		padding: 0.2rem;
 		margin-right: 1rem;
 		user-select: none;
+		text-align: center;
+		margin-bottom: 1rem;
+		
+		@media(min-width: 1000px){
+			float: right;
+		}
 	}
 	.utfButton {
 		display: inline-block;
