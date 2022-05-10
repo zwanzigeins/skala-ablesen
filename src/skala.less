@@ -81,32 +81,70 @@ div#skalaAblesen {
 	}
 
 	#buttonContainer {
+				
+		display: flex;		
 		padding: 0.2rem;
-		margin-right: 1rem;
 		user-select: none;
 		text-align: center;
+		margin: auto;
 		margin-bottom: 1rem;
-		
-		@media(min-width: 1000px){
-			float: right;
-		}
+		max-width: 800px;
 	}
+	
 	.utfButton {
+		
+		flex: 1;
+		margin-right: 5px;
+		
 		display: inline-block;
+		position: relative;
 		padding: 0.2rem 0.5rem; // make all boxes the same size ...
 		width: 1rem; // ... even if the content is too small
-		height: 1rem;
+		height: 2rem;
 		vertical-align: top; // ... even if the base-line is screwed up
 		cursor: pointer;
-		border-radius: 0.3rem;
-		border: 1px solid @primary;
-		box-shadow: 1px 1px 1px 1px @primary-transparent;
+		border-radius: 3px;
 		color: @primary;
 		user-select: none;
+		
+		background: #54a526;
 
 		&:active { // clicked
 			box-shadow: inset 1px 1px 1px 1px @primary-transparent;
 		}
+		
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	
+	.utfButton:before {
+		
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: no-repeat center center;
+		background-size: 24px;
+		z-index: 1;
+		filter: brightness(0) invert(100%);
+	}
+	
+	#btnLeft:before {	
+			
+		background-image: url(img/arrow-left-bold.svg);
+	}
+	
+	#btnRight:before {
+		
+		background-image: url(img/arrow-right-bold.svg);
+	}
+	
+	#btnPlay:before {
+		
+		background-image: url(img/play.svg);
 	}
 }
 
